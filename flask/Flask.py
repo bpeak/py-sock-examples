@@ -59,18 +59,3 @@ Connection: Closed
 
       conn_socket.close()
       server_socket.close()      
-
-app = Flask(__name__)
-
-@app.route("/test")
-def main():
-  return "<h1>메인</h1>"
-
-@app.route("/boards")
-def boards():
-  return "<h1>boards...</h1>"
-
-app.handle_request("/test")
-app.handle_request("/boards")
-
-app.run(host='0.0.0.0', port=3000)

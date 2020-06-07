@@ -1,3 +1,9 @@
+# 데이터와 자료형
+print("A", ord("A"))
+print(65, chr(65))
+
+print("\r\n")
+
 # byte 와 인코딩 디코딩
 print(bytes(10))
 print(bytes([0, 1, 2, 128, 255]))
