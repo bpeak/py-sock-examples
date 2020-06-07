@@ -6,6 +6,8 @@ print(bytes([65, 66, 67]).decode('ascii'))
 print("\r\n")
 
 # utf-8이란
+# ascii http://www.asciitable.com/
+# utf8 => hexadecimal https://onlineutf8tools.com/convert-utf8-to-hexadecimal
 print(bytes([234, 185, 128]))
 print(bytes([234, 185, 128]).decode('utf-8'))
 print("김".encode('utf-8'))
