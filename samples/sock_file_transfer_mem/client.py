@@ -12,7 +12,7 @@ while True:
   byte_data = f.read(1024)
   if not byte_data:
     break
-  print("send 1024bytes...")
+  print("send [ {} ] bytes...".format(len(byte_data)))
   client_socket.sendall(byte_data)
 
 client_socket.close()

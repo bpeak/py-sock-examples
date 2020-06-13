@@ -14,7 +14,7 @@ while True:
   byte_data = client_socket.recv(1024)
   if not byte_data:
     break
-  print("readed 1024bytes...")
+  print("readed [ {} ]bytes...".format(len(byte_data)))
   f.write(byte_data)
 
 f.close()
